@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container deletepage">
+        <p>are you sure you want to delete post <span>{{item}}</span></p>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div>
+
+                <input class="btn btn-md bg-danger text-white" type="submit" value="submit">
+                <a class="btn btn-md bg-warning text-white" href="{% url 'profile' userid %}">cancel</a>
+    
+            </div>
+          
+        </form>
+
+    </div>
+
+{% endblock %}

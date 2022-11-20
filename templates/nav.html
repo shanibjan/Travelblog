@@ -1,0 +1,74 @@
+{% load static %}
+
+<div class="container mainnavbar mt-4 px-0">
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      {% if user.is_authenticated%} 
+      <button class="profilepic_button" >
+        <a class="profilepic" href="" >  
+          {% if user.profileimg %}
+          <div>
+              <img src="{{user.profileimg.profileimg.url}}" alt="">
+          </div>
+          {% else %}
+          <div>
+              <img src="{% static 'images/prifiledummy.png' %}" alt="">
+          </div>
+          {% endif %} 
+        </a>
+      </button>
+      {% endif %}
+      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">       
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item active">
+            <a class="nav-link " href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="{% url 'index' %}">Blog</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="{% url 'hotels' %}">Hotels</a>
+          </li>
+          {% if user.is_authenticated%} 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{user.username}}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'logout' %}">logout</a></li>
+              <li><a class="dropdown-item" href="{% url 'profile' user.id %}">Profile</a></li>
+            </ul>
+          </li>
+          <a class="profilepic " href="" >  
+            {% if user.profileimg %}
+            <div>
+                <img src="{{user.profileimg.profileimg.url}}" alt="">
+            </div>
+            {% else %}
+            <div>
+                <img src="{% static 'images/prifiledummy.png' %}" alt="">
+            </div>
+            {% endif %} 
+          </a>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">login</a>
+          </li>
+          {% endif%}
+          <li class="post_blog">
+            <a class="btn btn-md  text-white text-capitalize  w-100" href="{% url 'createpost'%}">post a blog</a>
+          </li>
+         
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+    
+</div>

@@ -1,0 +1,53 @@
+
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content  %}
+    <div class="container homepage">
+        <div class="row">
+            <div class="col-lg-12 mt-1 mobile_search ">
+                <div class="bg-white">
+                    
+                    <form action="" method="GET">
+                        <input class="mt-1 col-12 filteritem" type="text" name="search" placeholder="search by tiltle or place">
+                        <input class="mt-1 col-12 btn btn-sm bg-info text-white" type="submit" value="submit">
+                    </form>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-9 col-md-7">
+                {% for hotel in hotels%}
+                <div class="blog-posts col-lg-12 row bg-white mt-5">
+                    <div class="col-lg-4 col-md-5 col-sm-12 px0"><img class="w-100" src="{{hotel.image.url}}" alt=""></div>
+                    <div class="col-lg-8 col-md-7 col-sm-12 py-4 px-4">
+                      <div class="row"> 
+                       <a class="col-8" href="#">
+                        <h2 >{{hotel.name}}</h2>
+                       </a>
+                      </div>
+                      <p class="text-capitalize">destination: {{hotel.place}}</p>
+                        <p>About - {{hotel.description}}</p>
+    
+                        
+                        <p class="col-4 date text-capitalize">Total rooms -  {{hotel.count}}</p>
+                        <p class="col-4 date text-capitalize">Perday rate - {{hotel.rate}}</p>
+                        <a class="btn btn-primary" href="{% url 'booking' hotel.pk%}"> Book now</a>
+                    </div>
+                </div>
+                {% empty %}
+                    <p>No data found !</p>
+                {% endfor%}
+                
+            </div>
+            <div class="col-lg-3 col-md-3 mt-5 right_menu ">
+                <div class="bg-white p-1">
+                    <form action="" method="GET">
+                        <input class="mt-1 filteritem" type="text" name="search" placeholder="search by tiltle or place">
+                        <input class="mt-2 ml-5 btn btn-sm text-white bg-info" type="submit" value="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

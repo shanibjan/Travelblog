@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content  %}
+
+
+<div class="container register_form py-5">
+    <h1 class="mt-2 mb-4">register your account</h1>
+    <form method="POST" action="">
+
+        {% csrf_token %}
+        
+    <div class="mb-3">
+        <div class="mt-4 mb-2 input-group-append">
+            <span class="">username</span>
+        </div>
+        {{form.username}}
+    </div>
+    <div class="mb-2">
+        <div class="mt-4 mb-2 input-group-append">
+            <span class="">email</span>
+        </div>
+        {{form.email}}
+    </div>
+    <div class="mb-2">
+        <div class="mt-4 mb-2 input-group-append">
+            <span class="">password</span>
+        </div>
+        {{form.password1}}
+    </div>
+    <div class="mb-2">
+        <div class="mt-4 mb-2 input-group-append">
+            <span class="">conform password</span>
+        </div>
+        {{form.password2}}
+    </div>
+
+    <p> {{ form.errors }}</p>
+
+       <div class="d-flex justify-content-center mt-4 login_container">
+         <input class="btn btn-md btn-primary" type="submit" value="Register Account">
+       </div>
+       <p class="mt-3 ">already have accout ?<span><a href="{% url 'login' %}">login</a></span></p>
+</form>
+</div>
+
+{% endblock %}

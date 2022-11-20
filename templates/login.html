@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container loginpage">
+
+    {% for message in messages %}
+        <p>{{message}}</p>
+    {% endfor %}
+
+    <h1>user login</h1>
+
+    <form action="" method="POST">
+        {% csrf_token%}
+
+        <input type="text" name="username" placeholder="Username..." class="form-control">
+        <input  type="password" name="password" placeholder="Password..." class="form-control mt-3" >
+
+        <input class="btn btn-lg bg-primary text-white mt-3 login_btn" type="submit" value="Login">
+
+
+    </form>
+    <p class="mt-4">
+        no accout !<a href="{% url 'registration' %}">register</a>
+    </p>
+</div>
+
+{% endblock %}
