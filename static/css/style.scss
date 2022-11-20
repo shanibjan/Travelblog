@@ -1,0 +1,647 @@
+html{
+    overflow-x: hidden;
+    body{
+        background-color: #F7F7F7 !important;
+        overflow-x: hidden;
+    }
+}
+.profilepic_button{
+    display: none;
+    background: none;
+}
+
+.mainnavbar{
+    nav{
+        .container-fluid{
+            
+            button{
+                width: 8%;
+                border: none;
+                img{
+                    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 20px;
+                }
+            }
+            button:focus{
+                box-shadow: none;
+            }
+        }
+        .navbar-collapse{
+            ul{ 
+                text-align: center;
+                li.post_blog{
+                    a{
+                        background-color: tomato;
+                    }
+                }
+                li{
+                    margin-right: 10px;
+                    a.nav-link:hover{
+                        color: tomato;
+                    }
+                }
+                li.dropdown{
+                    margin-right: 0px;
+                }
+            }
+            
+            a.profilepic{
+                width: 30px;
+                margin-right: 20px;
+                /* vertical-align: -webkit-baseline-middle; */
+                padding-top: 4px;
+                div{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        height: 28px;
+                        border-radius: 4px;
+                    }
+                }
+
+            }
+            
+        } 
+
+    }
+
+}
+
+.mobile_search{
+    display: none;
+    @media(max-width:767px){
+        display: block;
+    }
+    div{
+        form{
+            input.filteritem{
+                padding: 4px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-right: 1%;
+            }
+        }
+        div{
+            a{
+                background-color: tomato;
+            }
+        }
+    }
+}
+.right_menu{
+    display: block;
+    @media(max-width:767px){
+        display: none;
+    }
+    div{
+        position: fixed;
+        form{
+            input{
+                display: block;
+            }
+            input.filteritem{
+                padding: 4px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-right: 1%;
+            }
+        }
+    a{
+        background-color: tomato;
+    }
+        
+    }
+}
+
+div.latest{
+    position: unset;
+    div{
+        position: unset;
+       table{
+           width: 100%;
+           tr{
+               margin-top: 3%;
+               td{
+                   font: 18px;
+                   img{
+                       width: 23px;
+                       height: 23px;
+                       border-radius: 50%;
+                       object-fit: cover;
+                   }
+               }
+           }
+       }
+    }
+}
+
+.carousel-indicators{
+    button{
+        width: 10px !important;
+        height: 10px !important;
+        margin-right: 8px !important;
+        margin-left: 3px !important;
+        border-radius: 50% !important;
+    }
+}
+.right_menu{
+    border-radius: 10px;
+    height: fit-content;
+}
+.homepage{
+    div.blog-posts{
+        border-radius: 10px;
+        div{
+            padding: 0;
+            
+            img{
+                height: 250px;
+                object-fit: cover;
+                border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            }
+        }
+        div{
+            div{
+                a{
+                    text-decoration: none;
+                    h2{
+                        text-transform: capitalize;
+                        color: #212529;
+
+                    }
+                }
+                
+            }
+            .author{
+                padding-right: 5%;
+                h6{
+                    span{
+                        img{
+                            width: 26px;
+                            height: 26px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.profile_page{
+    div.row{
+        --bs-gutter-x: 0;
+        div.userinfo-main{
+            div.user-info{
+                h5{
+                    span{
+
+                    }
+                }
+                p{
+                    span{
+
+                    }
+                }
+                a{
+                    background-color: tomato;
+                }
+            }
+            div.total-posts{
+                h4{
+
+                }
+                p{
+                    font-size: 30px;
+                    font-weight: 500;
+                    color: tomato;
+                }
+            }
+        }
+        div.profileimgs{
+            
+
+            div.img-container{
+                width: 60%;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    height: 178px;
+                    display: block;
+                    @media(max-width:991px){
+                        height: unset;
+                    }
+                }
+                
+                .edittag{
+                    width: 100%;
+                    background-color: tomato;
+                    border: none;
+                    a{
+                        color: #fff;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        i{
+                            margin-left: 12px;
+                        }
+                    }
+                }
+                .edittag:hover{
+                    background-color: #fff;
+                    a{
+                        color: tomato;
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}
+
+.detail_view{
+    h1{
+
+    }
+    p{
+
+    }
+    div{
+        h6{
+            font-size: 18px;
+            span{
+                img{
+                    width:35px;
+                    height: 35px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    div.richtext_uploads{
+        img{
+            width: 100% !important;
+            object-fit: cover !important;
+            height: unset !important;
+        }
+        p{
+            color: #000;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.register_form{
+    h1{
+        text-transform: capitalize;
+    }
+    form{
+        margin-right: 15%;
+        margin-left: 15%;
+        @media(max-width:573px){
+            margin-right: 1%;
+            margin-left: 1%;
+        }
+        div{
+            span{
+                text-transform: capitalize;
+                font-size: 19px;
+            }   
+        }
+        input{
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        div.login_container{
+            input{
+                
+            }
+        }
+        p{
+            text-align: right;
+            margin-right: 20px;
+            span{
+                margin-left: 10px;
+                a{
+                    color: tomato;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// section home design
+
+
+.front_section{
+    div.row{
+        div.imgcontainer{
+
+        }
+        div.textcontainer{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h2{
+
+            }
+            a{
+                background-color: tomato;
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+
+        }
+    }
+}
+
+.about_section{
+    div{
+        div.col-8 {
+            margin: 0 auto;
+            border-radius: 5px;
+            @media(max-width:500px){
+                width: 100%;
+            }
+
+            h5{
+
+            }
+            p{
+
+            }
+        }
+    }
+}
+
+
+.contact_section{
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    background-image: url(../images/bg1.png);
+    div.container{
+        div.row{
+            div.formcontainer{
+                input[type=text]{
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 2px solid;
+                    border-color: darkgrey;
+                }
+                textarea{
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 5px;
+                    border: 2px solid;
+                    border-color: darkgrey;
+                }
+            }
+        }
+    }
+}
+
+
+.filters{
+    form{
+        input.filter_items{
+            padding: 4px;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            margin-right: 1%;
+            @media(max-width: 767px){
+                width: 100%;
+                margin-top: 2%;
+            }
+        }
+        
+        input.btn{
+            // background-color: tomato;
+            @media(max-width: 767px){
+                margin-top: 3%;
+            }
+            @media(max-width: 470px){
+                width: 100%;
+            }
+        }
+    }
+}
+
+.loginpage{
+    h1{
+        text-transform: capitalize;
+    }
+    form{
+        input{
+
+        }
+    }
+    p{
+        margin-left: 10px;
+        text-transform: capitalize;
+        a{
+            color: tomato;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+.table{
+    tr{
+        th{
+            
+            @media(max-width:350px){
+               padding: 0;
+            }
+        }
+    }
+}
+
+.deletepage{
+    p{
+        span{
+            color: tomato;
+            font-size: 25px;
+        }
+    }
+}
+
+
+.detail_view{
+    h1{
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 17px;
+        color: tomato;
+    }
+}
+
+.postblog-user{
+    margin: 5% 10%;
+    @media(max-width:432px){
+        margin: 5% 3%;
+    }
+    form{
+        div{
+            margin: 2% 0;
+        }
+        .submit{
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 986px) {
+    .navbar-collapse{
+        ul{ 
+            text-align: center;
+            
+        }
+     } 
+    .profilepic{
+        display: none;
+    }
+    button.profilepic_button{
+        width: 6%;
+        display: block;
+        position: absolute;
+        right: 0;
+        .profilepic{
+            display: block;
+        }
+    }
+    .mainnavbar{
+        nav{
+            .container-fluid{
+                
+                button.navbar-toggler{
+                    margin-right: 6%;
+                }
+                
+                button.profilepic_button{
+                    width: 6%;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    .profilepic{
+                        display: block;
+                    }
+                }
+            }
+        }
+    
+    }
+    .profile_page{
+        div.row{
+            
+            div.profileimgs{  
+                div{
+                    width: 30%;
+   
+                }
+            }
+        }
+    }
+    
+}
+@media(max-width:767px){
+    .user-info{
+        text-align: center;
+        a{
+            width: 100%;
+        }
+    }
+    .homepage{
+        div.blog-posts{
+            div{           
+                img{
+                    height: unset;
+                    border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                }
+            }
+        }
+        
+    }
+}
+@media(max-width:500px){
+    .profile_page{
+        div.row{
+            
+            div.profileimgs{  
+                div{
+                    width: 43%;
+   
+                }
+            }
+        }
+    }
+}
+@media(max-width:458px){
+    .mainnavbar{
+        nav{
+            .container-fluid{
+                
+                button.profilepic_button{
+                    width: 8%;
+                   
+                }
+            }
+        }
+    
+    }
+
+}
+
+@media(max-width:378px){
+    .mainnavbar{
+        nav{
+            .container-fluid{
+                
+                button.profilepic_button{
+                    width: 10%;
+                   
+                }
+                button.navbar-toggler{
+                    margin-right: 10%;
+                }
+            }
+        }
+    
+    }
+    .profile_page{
+        div.row{
+            
+            div.profileimgs{  
+                div{
+                    width: 60%;
+   
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,536 @@
+html {
+  overflow-x: hidden;
+}
+
+html body {
+  background-color: #F7F7F7 !important;
+  overflow-x: hidden;
+}
+
+.profilepic_button {
+  display: none;
+  background: none;
+}
+
+.mainnavbar nav .container-fluid button {
+  width: 8%;
+  border: none;
+}
+
+.mainnavbar nav .container-fluid button img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20px;
+}
+
+.mainnavbar nav .container-fluid button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mainnavbar nav .navbar-collapse ul {
+  text-align: center;
+}
+
+.mainnavbar nav .navbar-collapse ul li.post_blog a {
+  background-color: tomato;
+}
+
+.mainnavbar nav .navbar-collapse ul li {
+  margin-right: 10px;
+}
+
+.mainnavbar nav .navbar-collapse ul li a.nav-link:hover {
+  color: tomato;
+}
+
+.mainnavbar nav .navbar-collapse ul li.dropdown {
+  margin-right: 0px;
+}
+
+.mainnavbar nav .navbar-collapse a.profilepic {
+  width: 30px;
+  margin-right: 20px;
+  /* vertical-align: -webkit-baseline-middle; */
+  padding-top: 4px;
+}
+
+.mainnavbar nav .navbar-collapse a.profilepic div {
+  width: 100%;
+}
+
+.mainnavbar nav .navbar-collapse a.profilepic div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 28px;
+  border-radius: 4px;
+}
+
+.mobile_search {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile_search {
+    display: block;
+  }
+}
+
+.mobile_search div form input.filteritem {
+  padding: 4px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  margin-right: 1%;
+}
+
+.mobile_search div div a {
+  background-color: tomato;
+}
+
+.right_menu {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .right_menu {
+    display: none;
+  }
+}
+
+.right_menu div {
+  position: fixed;
+}
+
+.right_menu div form input {
+  display: block;
+}
+
+.right_menu div form input.filteritem {
+  padding: 4px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  margin-right: 1%;
+}
+
+.right_menu div a {
+  background-color: tomato;
+}
+
+div.latest {
+  position: unset;
+}
+
+div.latest div {
+  position: unset;
+}
+
+div.latest div table {
+  width: 100%;
+}
+
+div.latest div table tr {
+  margin-top: 3%;
+}
+
+div.latest div table tr td {
+  font: 18px;
+}
+
+div.latest div table tr td img {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  margin-right: 8px !important;
+  margin-left: 3px !important;
+  border-radius: 50% !important;
+}
+
+.right_menu {
+  border-radius: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.homepage div.blog-posts {
+  border-radius: 10px;
+}
+
+.homepage div.blog-posts div {
+  padding: 0;
+}
+
+.homepage div.blog-posts div img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.homepage div.blog-posts div div a {
+  text-decoration: none;
+}
+
+.homepage div.blog-posts div div a h2 {
+  text-transform: capitalize;
+  color: #212529;
+}
+
+.homepage div.blog-posts div .author {
+  padding-right: 5%;
+}
+
+.homepage div.blog-posts div .author h6 span img {
+  width: 26px;
+  height: 26px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile_page div.row {
+  --bs-gutter-x: 0;
+}
+
+.profile_page div.row div.userinfo-main div.user-info a {
+  background-color: tomato;
+}
+
+.profile_page div.row div.userinfo-main div.total-posts p {
+  font-size: 30px;
+  font-weight: 500;
+  color: tomato;
+}
+
+.profile_page div.row div.profileimgs div.img-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.profile_page div.row div.profileimgs div.img-container img {
+  width: 100%;
+  height: 178px;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .profile_page div.row div.profileimgs div.img-container img {
+    height: unset;
+  }
+}
+
+.profile_page div.row div.profileimgs div.img-container .edittag {
+  width: 100%;
+  background-color: tomato;
+  border: none;
+}
+
+.profile_page div.row div.profileimgs div.img-container .edittag a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.profile_page div.row div.profileimgs div.img-container .edittag a i {
+  margin-left: 12px;
+}
+
+.profile_page div.row div.profileimgs div.img-container .edittag:hover {
+  background-color: #fff;
+}
+
+.profile_page div.row div.profileimgs div.img-container .edittag:hover a {
+  color: tomato;
+}
+
+.detail_view div h6 {
+  font-size: 18px;
+}
+
+.detail_view div h6 span img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.detail_view div.richtext_uploads img {
+  width: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  height: unset !important;
+}
+
+.detail_view div.richtext_uploads p {
+  color: #000;
+  margin-bottom: 0;
+}
+
+.register_form h1 {
+  text-transform: capitalize;
+}
+
+.register_form form {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+@media (max-width: 573px) {
+  .register_form form {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+
+.register_form form div span {
+  text-transform: capitalize;
+  font-size: 19px;
+}
+
+.register_form form input {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.register_form form p {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.register_form form p span {
+  margin-left: 10px;
+}
+
+.register_form form p span a {
+  color: tomato;
+  text-decoration: none;
+}
+
+.front_section div.row div.textcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.front_section div.row div.textcontainer a {
+  background-color: tomato;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.about_section div div.col-8 {
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .about_section div div.col-8 {
+    width: 100%;
+  }
+}
+
+.contact_section {
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  background-image: url(../images/bg1.png);
+}
+
+.contact_section div.container div.row div.formcontainer input[type=text] {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: darkgrey;
+}
+
+.contact_section div.container div.row div.formcontainer textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: darkgrey;
+}
+
+.filters form input.filter_items {
+  padding: 4px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  margin-right: 1%;
+}
+
+@media (max-width: 767px) {
+  .filters form input.filter_items {
+    width: 100%;
+    margin-top: 2%;
+  }
+}
+
+@media (max-width: 767px) {
+  .filters form input.btn {
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 470px) {
+  .filters form input.btn {
+    width: 100%;
+  }
+}
+
+.loginpage h1 {
+  text-transform: capitalize;
+}
+
+.loginpage p {
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.loginpage p a {
+  color: tomato;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+@media (max-width: 350px) {
+  .table tr th {
+    padding: 0;
+  }
+}
+
+.deletepage p span {
+  color: tomato;
+  font-size: 25px;
+}
+
+.detail_view h1 {
+  text-transform: capitalize;
+}
+
+.detail_view p {
+  font-size: 17px;
+  color: tomato;
+}
+
+.postblog-user {
+  margin: 5% 10%;
+}
+
+@media (max-width: 432px) {
+  .postblog-user {
+    margin: 5% 3%;
+  }
+}
+
+.postblog-user form div {
+  margin: 2% 0;
+}
+
+.postblog-user form .submit {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+@media (max-width: 986px) {
+  .navbar-collapse ul {
+    text-align: center;
+  }
+  .profilepic {
+    display: none;
+  }
+  button.profilepic_button {
+    width: 6%;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  button.profilepic_button .profilepic {
+    display: block;
+  }
+  .mainnavbar nav .container-fluid button.navbar-toggler {
+    margin-right: 6%;
+  }
+  .mainnavbar nav .container-fluid button.profilepic_button {
+    width: 6%;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .mainnavbar nav .container-fluid button.profilepic_button .profilepic {
+    display: block;
+  }
+  .profile_page div.row div.profileimgs div {
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  .user-info {
+    text-align: center;
+  }
+  .user-info a {
+    width: 100%;
+  }
+  .homepage div.blog-posts div img {
+    height: unset;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile_page div.row div.profileimgs div {
+    width: 43%;
+  }
+}
+
+@media (max-width: 458px) {
+  .mainnavbar nav .container-fluid button.profilepic_button {
+    width: 8%;
+  }
+}
+
+@media (max-width: 378px) {
+  .mainnavbar nav .container-fluid button.profilepic_button {
+    width: 10%;
+  }
+  .mainnavbar nav .container-fluid button.navbar-toggler {
+    margin-right: 10%;
+  }
+  .profile_page div.row div.profileimgs div {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
